@@ -39,6 +39,9 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    bourbon (4.3.2)
+      sass (~> 3.4)
+      thor (~> 0.19)
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.4)
@@ -151,6 +154,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   byebug
   dotenv-rails
   jbuilder (~> 2.5)

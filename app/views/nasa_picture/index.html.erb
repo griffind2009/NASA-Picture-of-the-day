@@ -1,4 +1,8 @@
 <h1><%= @nasa_info['title'] %></h1>
-<img src="<%=@nasa_info['url'] %>" />
+<% if @media_type_is_video %>
+  <iframe src="<%= @nasa_info['url'] %>"></iframe>
+<% else %>
+  <img src="<%=@nasa_info['url'] %>" />
+<% end %>
 <p> <%= @nasa_info['explanation'] %></p>
 <p><%= @nasa_info['date'] %></p>
